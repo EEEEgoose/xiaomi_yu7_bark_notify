@@ -107,7 +107,7 @@ def load_delivery_time():
 
 def send_bark_message(token, message):
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    url = f"https://api.day.app/{token}"
+    url = f"{token}"
     headers = {
         "Content-Type": "application/json; charset=utf-8",
     }
