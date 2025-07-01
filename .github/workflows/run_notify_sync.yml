@@ -9,8 +9,8 @@ on:
       - main
 
 env:
-  GITHUB_NAME: ${{GITHUB_NAME}}
-  GITHUB_EMAIL: ${{GITHUB_EMAIL}}
+  GITHUB_NAME: ${{ secrets.NAME}}
+  GITHUB_EMAIL: ${{ secrets.EMAIL}}
 
 jobs:
   sync:
