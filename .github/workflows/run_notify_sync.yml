@@ -3,14 +3,14 @@ name: Run Notify Sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/30 * * * *'
   push:
     branches:
       - main
 
 env:
-  GITHUB_NAME: arthurfsy2
-  GITHUB_EMAIL: fsyflh@gmail.com
+  GITHUB_NAME: ${{GITHUB_NAME}}
+  GITHUB_EMAIL: ${{GITHUB_EMAIL}}
 
 jobs:
   sync:
